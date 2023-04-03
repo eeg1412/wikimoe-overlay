@@ -1,0 +1,31 @@
+{
+  "name": "wikimoe-overlay",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/wikimoe-overlay.umd.js",
+  "module": "./dist/wikimoe-overlay.es.js",
+  "homepage": "https://github.com/eeg1412/wikimoe-overlay",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/wikimoe-overlay.es.js",
+      "require": "./dist/wikimoe-overlay.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.1.0"
+  }
+}
